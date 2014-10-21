@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="MAAplot_demo1"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <LazDoc Paths="PlotClass/doc"/>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <MacroValues Count="1">
+      <Macro2 Name="LCLWidgetType" Value="qt"/>
+    </MacroValues>
+    <BuildModes Count="2">
+      <Item1 Name="Default" Default="True"/>
+      <Item2 Name="Default1">
+        <MacroValues Count="1">
+          <Macro1 Name="LCLWidgetType" Value="gtk2"/>
+        </MacroValues>
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="MAAplot_demo1"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="PlotClass"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Checks>
+              <IOChecks Value="True"/>
+              <RangeChecks Value="True"/>
+              <OverflowChecks Value="True"/>
+            </Checks>
+            <Optimizations>
+              <OptimizationLevel Value="2"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+          <Other>
+            <CompilerMessages>
+              <MsgFileName Value=""/>
+            </CompilerMessages>
+            <CompilerPath Value="$(CompPath)"/>
+          </Other>
+        </CompilerOptions>
+      </Item2>
+      <SharedMatrixOptions Count="2">
+        <Item1 ID="294773517317" Modes="Default1" Type="IDEMacro" MacroName="LCLWidgetType" Value="gtk2"/>
+        <Item2 ID="648039917396" Modes="Default" Type="IDEMacro" MacroName="LCLWidgetType" Value="qt"/>
+      </SharedMatrixOptions>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="17">
+      <Unit0>
+        <Filename Value="MAAplot_demo1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MAAplot_demo1"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="umain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm_main"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uMain"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="uplotdemo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPlotDemo"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="PlotClass/uplotclass.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPlotClass"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="PlotClass/uplot_resultwriter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPlot_ResultWriter"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="PlotClass/umarkerdrawer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMarkerDrawer"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="PlotClass/uplotforms.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPlotForms"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="PlotClass/uplottemplates.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPlotTemplates"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="PlotClass/uplotutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPlotUtils"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="PlotClass/uPlotSeries.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPlotSeries"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="PlotClass/uplotrect.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPlotRect"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="PlotClass/uplotinterpolator.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPlotInterpolator"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="PlotClass/uplotaxis.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPlotAxis"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="PlotClass/uPlotStyles.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPlotStyles"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="PlotClass/uplothidhandler.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPlotHIDHandler"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="PlotClass/useriesmarkers.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="useriesmarkers"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="PlotClass/uplotoverrides.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPlotOverrides"/>
+      </Unit16>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="MAAplot_demo1"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="PlotClass"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+      </Checks>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <MsgFileName Value=""/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+</CONFIG>

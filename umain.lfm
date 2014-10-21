@@ -1,0 +1,141 @@
+object frm_main: Tfrm_main
+  Left = 2064
+  Height = 623
+  Top = 203
+  Width = 456
+  Caption = 'frm_main'
+  ClientHeight = 623
+  ClientWidth = 456
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '1.2.4.0'
+  object gb_control: TGroupBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 0
+    Height = 73
+    Top = 0
+    Width = 456
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Control'
+    ClientHeight = 53
+    ClientWidth = 450
+    TabOrder = 0
+    object cb_demotype: TComboBox
+      AnchorSideLeft.Control = lbl_demotype
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = lbl_demotype
+      AnchorSideTop.Side = asrCenter
+      Left = 91
+      Height = 23
+      Top = 8
+      Width = 156
+      BorderSpacing.Left = 8
+      ItemHeight = 0
+      Items.Strings = (
+        '2D simple plot'
+        '3D simple plot'
+        '2D fast'
+        '2D waterfall'
+        '3D waterfall'
+      )
+      OnChange = cb_demotypeChange
+      TabOrder = 0
+      Text = 'cb_demotype'
+    end
+    object lbl_demotype: TLabel
+      AnchorSideTop.Control = gb_control
+      Left = 32
+      Height = 15
+      Top = 12
+      Width = 51
+      BorderSpacing.Top = 12
+      Caption = 'Plot type'
+      ParentColor = False
+    end
+    object btn_dodemo: TSpeedButton
+      AnchorSideLeft.Control = cb_demotype
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = cb_demotype
+      AnchorSideTop.Side = asrCenter
+      Left = 279
+      Height = 22
+      Top = 8
+      Width = 136
+      BorderSpacing.Left = 32
+      Caption = 'Start demo'
+      OnClick = btn_dodemoClick
+    end
+  end
+  object gb_plot: TGroupBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = gb_control
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = gb_options
+    Left = 0
+    Height = 416
+    Top = 73
+    Width = 456
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Plot'
+    TabOrder = 1
+  end
+  object gb_options: TGroupBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 134
+    Top = 489
+    Width = 456
+    Anchors = [akLeft, akRight, akBottom]
+    ClientHeight = 128
+    ClientWidth = 450
+    TabOrder = 2
+    object mem_info: TMemo
+      AnchorSideTop.Control = gb_options
+      AnchorSideRight.Control = gb_options
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = gb_options
+      AnchorSideBottom.Side = asrBottom
+      Left = 192
+      Height = 128
+      Top = 0
+      Width = 258
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      Lines.Strings = (
+        'mem_info'
+      )
+      ScrollBars = ssAutoVertical
+      TabOrder = 0
+    end
+    object ed_alpha: TSpinEdit
+      AnchorSideLeft.Control = lbl_alpha
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = lbl_alpha
+      AnchorSideTop.Side = asrCenter
+      Left = 102
+      Height = 23
+      Top = 20
+      Width = 50
+      BorderSpacing.Left = 6
+      MaxValue = 255
+      OnChange = ed_alphaChange
+      TabOrder = 1
+    end
+    object lbl_alpha: TLabel
+      Left = 24
+      Height = 15
+      Top = 24
+      Width = 72
+      Caption = 'transparency'
+      ParentColor = False
+    end
+  end
+end
